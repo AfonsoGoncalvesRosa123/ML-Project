@@ -1,0 +1,37 @@
+{
+  "model": "Hist. gradient boosting",
+  "best_params": {
+    "model__max_leaf_nodes": 63,
+    "model__max_iter": 400,
+    "model__learning_rate": 0.1,
+    "model__l2_regularization": 0.1
+  },
+  "roc_auc": 0.9978319045854003,
+  "report": {
+    "not extinguished": {
+      "precision": 0.9734162895927602,
+      "recall": 0.9823059360730594,
+      "f1-score": 0.977840909090909,
+      "support": 1752.0
+    },
+    "extinguished": {
+      "precision": 0.9819872167344567,
+      "recall": 0.9729418537708693,
+      "f1-score": 0.9774436090225563,
+      "support": 1737.0
+    },
+    "accuracy": 0.9776440240756664,
+    "macro avg": {
+      "precision": 0.9777017531636084,
+      "recall": 0.9776238949219643,
+      "f1-score": 0.9776422590567326,
+      "support": 3489.0
+    },
+    "weighted avg": {
+      "precision": 0.9776833289866057,
+      "recall": 0.9776440240756664,
+      "f1-score": 0.9776431130981522,
+      "support": 3489.0
+    }
+  }
+}
