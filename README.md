@@ -63,6 +63,7 @@ Accuracy 0.98 · ROC AUC 0.998
 - Non-linear models clearly beat logistic regression (0.90 → 0.97 accuracy), so the relationship between the settings and extinction is not linear.
 - Precision and recall are almost identical for both classes, so the model does not favour one error type over the other.
 - Test and cross-validation scores agree, which suggests the model is not overfitting to the training set.
+- Airflow and distance matter most: shuffling either one drops the F1 score by roughly 0.2, followed by frequency and size (about 0.1 each). Fuel type matters less (about 0.05) and the sound level in decibels has the smallest effect (about 0.01). Permutation importance can understate variables that carry overlapping information, so this is a ranking of how much the model relies on each column, not proof of physical cause.
 - Limitation: the data come from controlled laboratory runs with a fixed set of fuels and distances, so the result says nothing about how the model would behave on conditions outside that range.
 
 ## Run it
